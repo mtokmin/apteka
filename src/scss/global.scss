@@ -1,0 +1,27 @@
+@import "../scss/fonts.scss";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.page {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  justify-items: center;
+  @include font(400);
+  font-size: 14px;
+}

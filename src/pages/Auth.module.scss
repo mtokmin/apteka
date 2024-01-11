@@ -1,0 +1,55 @@
+@import '../scss/variables.scss';
+@import '../scss/fonts.scss';
+
+.container {
+  @include container;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.form__header {
+  font-size: 25px;
+}
+
+.form {
+  min-width: 140%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.input__text {
+  @include font(400);
+  padding: 10px 5px;
+  font-size: 16px;
+
+  &:focus {
+    outline-color: $color-dark-green;
+  }
+}
+
+.form__controls {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.auth__button {
+  align-self: center;
+  padding: 10px 15px;
+  @include font(400);
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  color: $color-main-white;
+  background-color: $color-main-orange;
+
+  &:hover {
+    background-color: $color-light-orange;
+  }
+}

@@ -1,0 +1,16 @@
+.content ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.content li {
+  &:not(:last-child) {
+    margin-right: 20px;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+}

@@ -1,0 +1,50 @@
+@import "../../../scss/fonts.scss";
+@import "../../../scss/variables.scss";
+
+.form {
+  display: flex;
+}
+
+.input {
+  margin: 0;
+  padding-left: 10px;
+  width: 350px;
+  height: 37px;
+  border: none;
+  border-radius: 3px 0 0 3px;
+  outline: none;
+  @include font(400);
+  font-size: 16px;
+
+  &:focus {
+    outline: 2px solid $color-dark-green;
+  }
+
+  @media (min-width: 1180px) {
+    width: 400px;
+  }
+
+  @media (min-width: $desktop-width-1280) {
+    width: 500px;
+  }
+}
+
+.button {
+  height: 37px;
+  padding: 0 15px  ;
+  background-color: $color-main-orange;
+  border-radius: 0 3px 3px 0;
+  border: none;
+  color: $color-main-white;
+  cursor: pointer;
+  transition: all 0.2s ease-out;
+
+  &:hover {
+    background-color: $color-light-orange;
+  }
+
+  &:active {
+    background-color: $color-main-orange;
+    box-shadow: inset 1px 1px 3px $color-main-black;
+  }
+}

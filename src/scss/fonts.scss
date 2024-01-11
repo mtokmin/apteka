@@ -1,0 +1,22 @@
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto"),
+    url("../fonts/roboto.woff2"),
+    url("../fonts/roboto.woff");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto"),
+    url("../fonts/robotobold.woff2"),
+    url("../fonts/robotobold.woff");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@mixin font($weight) {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: $weight;
+}

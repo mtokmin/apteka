@@ -1,0 +1,46 @@
+@import '../../scss/variables.scss';
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding-top: 15px;
+  padding-bottom: 20px;
+  background-color: $color-main-green;
+  border-bottom: 3px solid $color-main-orange;
+  color: $color-main-white;
+}
+
+.header a {
+  color: $color-main-white;
+}
+
+.logo {
+  margin-right: 40px;
+  align-self: center;
+}
+
+.wrapper {
+  @include container;
+  display: grid;
+  grid-template-columns: min-content 1fr;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.content__top {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+
+.content__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
